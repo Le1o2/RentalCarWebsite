@@ -1,0 +1,261 @@
+<html lang="en">
+
+<head>
+    <style>
+        ul {
+            list-style: none;
+            margin: 0;
+            position: absolute;
+            display: block;
+            line-height: 20px;
+            text-align: left;
+        }
+
+        li {
+            padding: 10px;
+            display: block;
+        }
+
+        li:hover>ul {
+            display: block;
+        }
+
+        ul ul {
+            display: none;
+            position: relative;
+        }
+
+        ul ul li {
+            display: block;
+        }
+
+        ul ul ul {
+            position: relative;
+        }
+
+        ul ul ul li {
+            text-align: left;
+            display: inline-block;
+        }
+
+        .Top_Left {
+            position: absolute;
+            background-color: aquamarine;
+            width: 40%;
+            height: 100%;
+            top: 0;
+            left: 0;
+
+        }
+
+        .Top_Right {
+            position: absolute;
+            background-color: white;
+            width: 100%;
+            height: 60%;
+            left: 40%;
+            top: 0;
+        }
+
+        .Bottom_Right {
+            position: absolute;
+            background-color: red;
+            width: 100%;
+            height: 40%;
+            left: 40%;
+            top: 60%;
+        }
+
+        #bottom_right {
+            border: none;
+        }
+
+        #top_right {
+            border: none;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>On-line Grocery Store</title>
+</head>
+
+<body>
+
+    <div class="Top_Left">
+        <ul>
+            <li>
+                <a href="#">Frozen Food</a>
+                <ul>
+                    <li>
+                        <a href="goods.php?pid=1002" target="item">Hamburger Patties</a>
+                    </li>
+                    <li>
+                        <a href="#">Fish Fingers</a>
+                        <ul>
+                            <li>
+                                <a href="goods.php?pid=1000" target="item">500 Gram</a>
+                            </li>
+                            <li>
+                                <a href="goods.php?pid=1001" target="item">100 Gram</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=1003" target="item">Shelled Prawns</a>
+                    </li>
+                    <li>
+                        <a href="#">Tub Ice Cream</a>
+                        <ul>
+                            <li>
+                                <a href="goods.php?pid=1004" target="item">1 Litre</a>
+                            </li>
+                            <li>
+                                <a href="goods.php?pid=1005" target="item">2 Litre</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Fresh Food</a>
+                <ul>
+                    <li>
+                        <a href="goods.php?pid=3002" target="item">T'Bone Steak</a>
+                    </li>
+                    <li>
+                        <a href="#">Cheddar Cheese</a>
+                        <ul>
+                            <li>
+                                <a href="goods.php?pid=3000" target="item">500 Gram</a>
+                            </li>
+                            <li>
+                                <a href="goods.php?pid=3001" target="item">1000 Gram</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=3003" target="item">Navel Oranges</a>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=3004" target="item">Bananas</a>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=3006" target="item">Grapes</a>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=3007" target="item">Apples</a>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=3005" target="item">Peaches</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Beverages</a>
+                <ul>
+                    <li>
+                        <a href="#">Coffee</a>
+                        <ul>
+                            <li>
+                                <a href="goods.php?pid=4003" target="item">200 Gram</a>
+                            </li>
+                            <li>
+                                <a href="goods.php?pid=4004" target="item">500 Gram</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Earl Grey Tea Bags</a>
+                        <ul>
+                            <li>
+                                <a href="goods.php?pid=4000" target="item">Pack 25</a>
+                            </li>
+                            <li>
+                                <a href="goods.php?pid=4001" target="item">Pack 100</a>
+                            </li>
+                            <li>
+                                <a href="goods.php?pid=4002" target="item">Pack 200</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=4005" target="item">Chocolate Bar</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Home Health</a>
+                <ul>
+                    <li>
+                        <a href="goods.php?pid=2002" target="item">Bath Soap</a>
+                    </li>
+                    <li>
+                        <a href="#">Panadol</a>
+                        <ul>
+                            <li>
+                                <a href="goods.php?pid=2000" target="item">Pack 24</a>
+                            </li>
+                            <li>
+                                <a href="goods.php?pid=2001" target="item">Bottle 50</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=2005" target="item">Washing Powder</a>
+                    </li>
+                    <li>
+                        <a href="#">Garbage Bags</a>
+                        <ul>
+                            <li>
+                                <a href="goods.php?pid=2003" target="item">small(pack 10)</a>
+                            </li>
+                            <li>
+                                <a href="goods.php?pid=2004" target="item">large(pack 50)</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=2006" target="item">Laundry Bleach</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Pet Food</a>
+                <ul>
+                    <li>
+                        <a href="goods.php?pid=5002" target="item">Bird Food</a>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=5003" target="item">Cat Food</a>
+                    </li>
+                    <li>
+                        <a href="#">Dry Dog Food</a>
+                        <ul>
+                            <li>
+                                <a href="goods.php?pid=5001" target="item">1 kg.Pack</a>
+                            </li>
+                            <li>
+                                <a href="goods.php?pid=5000" target="item">5 kg.Pack</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="goods.php?pid=5004" target="item">Fish Food</a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="Top_Right">
+        <iframe id="top_right" name="item" src="goods.php"></iframe>
+    </div>
+
+    <div class="Bottom_Right">
+        <iframe id="bottom_right" name="cart" src="cart.php"></iframe>
+    </div>
+
+</body>
+
+</html>
